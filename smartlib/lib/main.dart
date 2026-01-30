@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:smartlib/home_pages/user%20home.dart';
 import 'package:smartlib/pages/Book_detail.dart';
@@ -18,13 +17,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.tealAccent)
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.tealAccent),
       ),
       initialRoute: '/login',
       routes: {
-        '/home': (context) => Student_home(title: "Smart Lib",),
-        '/login': (context) => Login_SL(),
+        '/home': (context) => Student_home(title: "Smart Lib"),
+        '/login': (context) => LoginPage(),
         '/books_details': (context) => BookDetail(),
+        // '':(context) => (),
       },
     );
   }
